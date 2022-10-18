@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Admin.ParkingFragment">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Gửi-Nhận xe thật dễ dàng"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/edtBienSo"
+                    android:background="@drawable/customborder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Biển số xe"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnCreate"
+                    android:backgroundTint="@color/btncolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:text="Gửi xe" />
+
+                <Button
+                    android:id="@+id/btnScan"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/btncolor"
+                    android:text="Quét xuất xe" />
+
+                <TextView
+                    android:id="@+id/tvSoXeDangGui"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CÁC XE ĐANG GỬI"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/revCacXeTrongBai"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</layout>

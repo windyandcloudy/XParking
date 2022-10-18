@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "770861103092",
+    "project_id": "x-parking",
+    "storage_bucket": "x-parking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770861103092:android:12fb3be77783723fefaba1",
+        "android_client_info": {
+          "package_name": "com.example.qlguixe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770861103092-brplgj243vfcmib3r58jg0l3lc6n8h8b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNKa60Rfj2oqdLIeikJpjY9BvjRbdTeHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770861103092-brplgj243vfcmib3r58jg0l3lc6n8h8b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/lo1">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvLg"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="150dp"
+                    app:cardCornerRadius="75dp"
+                    android:layout_height="150dp">
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/logo"
+                        android:layout_centerInParent="true"/>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/lo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lo1"
+                android:background="@drawable/customborder"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/etUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tên đăng nhập"
+                    android:textColor="@color/black"
+                    android:textColorHint="#7E7E7E"
+                    android:textSize="15dp"></EditText>
+
+                <EditText
+                    android:id="@+id/etPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etUser"
+                    android:hint="Mật khẩu"
+                    android:password="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#7E7E7E"
+                    android:textSize="15dp"></EditText>
+
+                <EditText
+                    android:id="@+id/etRePass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etPass"
+                    android:hint="Nhập lại mật khẩu"
+                    android:password="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#7E7E7E"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/etPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etRePass"
+                    android:hint="Nhập số ĐT"
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:textColorHint="#7E7E7E"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etPhoneNumber"
+                    android:hint="Nhập địa chỉ"
+                    android:textColor="@color/black"
+                    android:textColorHint="#7E7E7E"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/etNgaySinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etAddress"
+                    android:hint="Nhập ngày sinh"
+                    android:inputType="date"
+                    android:textColor="@color/black"
+                    android:textColorHint="#7E7E7E"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etNgaySinh"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textColorHint="#7E7E7E"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lo2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#FF0000"
+                android:text=""
+                android:textSize="12dp"
+                />
+
+            <Button
+                android:id="@+id/btnUserRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lo2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#FA6D04"
+                android:text="Thêm tài khoản"
+                android:textColor="@color/black" />
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#E8E2E2"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm xe"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+    <RelativeLayout
+        android:id="@+id/lnAddTransport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lo1"
+        android:background="@drawable/customborder"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:id="@+id/edtTransType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Loại xe"
+            android:textColor="@color/black"
+            android:textColorHint="#7E7E7E"
+            android:textSize="25dp"></EditText>
+        <EditText
+            android:id="@+id/edtTransName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtTransType"
+            android:hint="Tên xe"
+            android:textColor="@color/black"
+            android:textColorHint="#7E7E7E"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/edtTransLicense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtTransName"
+            android:hint="Biển số"
+            android:textColor="@color/black"
+            android:textColorHint="#7E7E7E"
+            android:textSize="25dp">
+        </EditText>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnAddToServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/btncolor"
+        android:text="THÊM XE"/>
+</LinearLayout>
