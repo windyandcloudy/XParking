@@ -1,5 +1,6 @@
 package com.example.qlguixe.ApiController;
 
+
 import com.example.qlguixe.Models.Account;
 import com.example.qlguixe.Models.Statistical;
 import com.example.qlguixe.Models.Transport;
@@ -20,8 +21,8 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface ApiController {
-//    String DOMAIN = "https://btl13.herokuapp.com/api/";
-    String DOMAIN = "https://guixedat.herokuapp.com/api/";
+    String DOMAIN = "https://b49c-118-69-3-112.ap.ngrok.io/api/";
+//    String DOMAIN = "https://guixedat.herokuapp.com/api/";
     Gson gson =new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").setLenient().create();
 
     ApiController apiService = new Retrofit.Builder()

@@ -242,7 +242,7 @@ public class UserFragment extends Fragment {
                 }else{
                     try {
                         long money = Long.parseLong(tien);
-                        if (money<0){
+                        if (money<=0){
                             throw new NumberFormatException("Số tiền phải là 1 số dương");
                         }
 
@@ -328,22 +328,22 @@ public class UserFragment extends Fragment {
                 String repass = edtRePass.getText().toString().trim();
                 String email= edtEmail.getText().toString().trim();
 
-                Pattern pusername = Pattern.compile("[^A-Za-z]");
+                Pattern pusername = Pattern.compile("^[A-Za-z]*$");
                 Matcher musername = pusername.matcher(username);
 
-                Pattern pphone = Pattern.compile("[^0-9]");
+                Pattern pphone = Pattern.compile("^[0-9]*$");
                 Matcher mphone = pphone.matcher(phone);
 
-                Pattern pemail = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\\\.[A-Z]{2,6}$");
+                Pattern pemail = Pattern.compile("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$");
                 Matcher memail = pemail.matcher(email);
 
-                if (username.length()<3 || musername.find()){
+                if (username.length()<3 || !musername.find()){
                     tvErrDK.setText("Tên đăng nhập không được chứa số và phải trên 3 kí tự!");
                 }else if (pass.length()<8){
                     tvErrDK.setText("Mật khẩu phải trên 8 kí tự");
                 }else if (mphone.find() || phone.length()<10){
                     tvErrDK.setText("Số điện thoại không hợp lệ");
-                }else if(memail.find()){
+                }else if(!memail.find()){
                     tvErrDK.setText("Email không hợp lệ");
                 } else
                 if( username.equals("") ||
