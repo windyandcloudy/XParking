@@ -21,8 +21,8 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface ApiController {
-    String DOMAIN = "https://b49c-118-69-3-112.ap.ngrok.io/api/";
-//    String DOMAIN = "https://guixedat.herokuapp.com/api/";
+//    String DOMAIN = "http://172.31.112.1:5000/api/";
+    String DOMAIN = "https://8575-2405-4802-136-c870-d9c7-5f65-fce1-ea41.ap.ngrok.io/api/";
     Gson gson =new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").setLenient().create();
 
     ApiController apiService = new Retrofit.Builder()

@@ -29,6 +29,6 @@ const cronJobAuto= new CronJob("0 12 * * *", async function(){
 cronJobAuto.start()
 
 
-app.listen(process.env.PORT ||3000, ()=>{
-  console.log("Server run at port 3000")
+app.listen(process.env.PORT ||5000, ()=>{
+  console.log("Server run at port 5000")
 })

@@ -30,7 +30,7 @@ module.exports= {
     if (!bienSo){
       throw new ErrorResponse(401, "Vui lòng cung cấp biển số xe gửi")
     }
-
+    console.log("BS", bienSo);
     let trans= await transModel.findOne({
       trans_license: bienSo
     })

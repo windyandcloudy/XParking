@@ -320,8 +320,8 @@ public class AdminMainActivity extends AppCompatActivity {
                                 dialogInterface.cancel();
                             }
                         });
-                        builder.show();
-//                        Toast.makeText(AdminMainActivity.this, "Server thông báo: "+ err, Toast.LENGTH_SHORT).show();
+//                        builder.show();
+                        Toast.makeText(AdminMainActivity.this, "Server thông báo: "+ err, Toast.LENGTH_SHORT).show();
                     }
                 }
                 @Override
